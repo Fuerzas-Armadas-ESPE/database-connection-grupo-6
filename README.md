@@ -83,7 +83,18 @@ Debes obtener un token de acceso enviando una solicitud POST a `/auth/login` con
 
 ## Contribuyendo
 
-¡Las contribuciones son bienvenidas! Si tienes alguna sugerencia, mejora o corrección, por favor crea un pull request.
+Actualizaciones realizadas:
+constructor: Este es el constructor de la clase PostsController. Inyecta el servicio PostsService, que se utiliza para manejar la lógica de negocio relacionada con las publicaciones.
+
+getAllPosts: Este método maneja las solicitudes GET a la ruta /posts. Retorna todas las publicaciones obtenidas del método getAllPosts del servicio.
+
+getPost: Este método maneja las solicitudes GET a la ruta /posts/:id, donde :id es el ID de la publicación. Retorna la publicación obtenida del método getPost del servicio.
+
+createPost: Este método maneja las solicitudes POST a la ruta /posts. Crea una nueva publicación con los datos proporcionados en el cuerpo de la solicitud y la retorna.
+
+updatePost: Este método maneja las solicitudes PUT a la ruta /posts/:id, donde :id es el ID de la publicación. Actualiza la publicación con los datos proporcionados en el cuerpo de la solicitud y la retorna.
+
+deletePost: Este método maneja las solicitudes DELETE a la ruta /posts/:id, donde :id es el ID de la publicación. Elimina la publicación y retorna un mensaje de éxito.
 
 ## Licencia
 
